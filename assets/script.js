@@ -47,17 +47,22 @@ const getPasswordCriteria = () => {
   if (doSpecialChars) {
     passChoice.push("!#$%&()*+,-./:;<=>?@[]^_`{|}~");
   }
+  //if the array is empty, the person must be prompted to select at least one option option
   if (passChoice.length === 0) {
     window.alert("you must choose at least one option");
   } else {
     return passChoice;
   }
 };
+//EDIT BELOW
 
 // This will take in passwordLength and passwordCriteria and return a string
-const createRandomPassword = () => {
-  return "kdUE28(@d0";
+const createRandomPassword = (passwordLength, passwordCriteria) => {
+  const theArray = [];
+  //create a for loop
 };
+
+//EDIT ABOVE
 
 // main function to generate the random password
 const generatePassword = () => {
