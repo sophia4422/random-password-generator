@@ -49,7 +49,7 @@ const getPasswordCriteria = () => {
   }
   //if the array is empty, the person must be prompted to select at least one option option
   if (passChoice.length === 0) {
-    window.alert("you must choose at least one option");
+    window.alert("You must select at least one character option");
   } else {
     return passChoice;
   }
@@ -59,11 +59,18 @@ const getPasswordCriteria = () => {
 // This will take in passwordLength and passwordCriteria and return a string
 const createRandomPassword = (passwordLength, passwordCriteria) => {
   const theArray = [];
-  //create a for loop
-  for (let i = 0; i < passwordLength; i += 1) {}
+  //create a for loop, loop will repeat until desired length set by user is met
+  for (let i = 0; i < passwordLength; i += 1) {
+    const randomNumber = Math.floor(Math.random() * passwordCriteria.length);
 
-  //pick a random index
-  //pick a random character
+    const randomArray = passwordCriteria[randomNumber];
+
+    const numberArray = Math.floor(Math.random() * randomArray.length);
+
+    const randomCharacter = randomArray.charAt(numberArray);
+    theArray.push(randomCharacter); //picks random character
+  }
+  return theArray.join("");
 };
 
 //EDIT ABOVE
