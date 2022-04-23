@@ -27,12 +27,27 @@ const getPasswordCriteria = () => {
   const doUppercase = confirm("Do you want uppercase characters?");
   const doNumbers = confirm("Do you want number characters?");
   const doSpecialChars = confirm("Do you want special characters?");
-};
 
-//Need a const for characters //    "abcdefghijklmnopqrstuvwxyz",
-// "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-//  "0123456789",
-// " !\"#$%&'()*+,-./:;<=>?@[]^_`{|}~",
+  //Need a const for characters //    "abcdefghijklmnopqrstuvwxyz",
+  // "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  //  "0123456789",
+  // " !\"#$%&'()*+,-./:;<=>?@[]^_`{|}~",
+
+  const passChoice = [];
+  //passChoice is an empty array that will get filled with the persons answers to the questions above
+  if (doLowercase) {
+    passChoice.push("abcdefghijklmnopqrstuvwxyz");
+  }
+  if (doUppercase) {
+    passChoice.push("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+  }
+  if (doNumbers) {
+    passChoice.push("0123456789");
+  }
+  if (doSpecialChars) {
+    passChoice.push("!#$%&()*+,-./:;<=>?@[]^_`{|}~");
+  }
+};
 
 // This will take in passwordLength and passwordCriteria and return a string
 const createRandomPassword = () => {
