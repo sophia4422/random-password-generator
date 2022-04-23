@@ -60,6 +60,9 @@ const getPasswordCriteria = () => {
 const createRandomPassword = (passwordLength, passwordCriteria) => {
   const theArray = [];
   //create a for loop
+
+  //pick a random index
+  //pick a random character
 };
 
 //EDIT ABOVE
