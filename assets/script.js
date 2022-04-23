@@ -47,6 +47,11 @@ const getPasswordCriteria = () => {
   if (doSpecialChars) {
     passChoice.push("!#$%&()*+,-./:;<=>?@[]^_`{|}~");
   }
+  if (passChoice.length === 0) {
+    window.alert("you must choose at least one option");
+  } else {
+    return passChoice;
+  }
 };
 
 // This will take in passwordLength and passwordCriteria and return a string
