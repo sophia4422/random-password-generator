@@ -11,7 +11,7 @@ const getPasswordLength = () => {
   //turn the users answer, which is a string, into a number
   const passwordLength = parseInt(whatLength);
 
-  //Need a function to check that the input is equal to or more than 8 or equal to or less than 128 characters (if/else statement)
+  //Need a function to check that the input is equal to or more than 8 or equal to or less than 128 characters with an if/else statement
   if (passwordLength >= 8 && passwordLength <= 128) {
     return passwordLength;
   } else {
@@ -28,13 +28,9 @@ const getPasswordCriteria = () => {
   const doNumbers = confirm("Do you want number characters?");
   const doSpecialChars = confirm("Do you want special characters?");
 
-  //Need a const for characters //    "abcdefghijklmnopqrstuvwxyz",
-  // "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  //  "0123456789",
-  // " !\"#$%&'()*+,-./:;<=>?@[]^_`{|}~",
-
+  //passChoice is an empty array that will get filled with the persons answers to the questions below
   const passChoice = [];
-  //passChoice is an empty array that will get filled with the persons answers to the questions above
+  //this will alert the user to select what criteria they want in their password
   if (doLowercase) {
     passChoice.push("abcdefghijklmnopqrstuvwxyz");
   }
@@ -54,7 +50,6 @@ const getPasswordCriteria = () => {
     return passChoice;
   }
 };
-//EDIT BELOW
 
 // This will take in passwordLength and passwordCriteria and return a string
 const createRandomPassword = (passwordLength, passwordCriteria) => {
@@ -62,7 +57,7 @@ const createRandomPassword = (passwordLength, passwordCriteria) => {
   //create a for loop, loop will repeat until desired length set by user is met
   for (let i = 0; i < passwordLength; i += 1) {
     const randomNumber = Math.floor(Math.random() * passwordCriteria.length);
-
+    //the loop will continue to pick a random character until the length is met
     const randomArray = passwordCriteria[randomNumber];
 
     const numberArray = Math.floor(Math.random() * randomArray.length);
@@ -77,13 +72,13 @@ const createRandomPassword = (passwordLength, passwordCriteria) => {
 
 // main function to generate the random password
 const generatePassword = () => {
-  // get the password length
+  // get the password length from the user
   const passwordLength = getPasswordLength();
 
-  // get the password criteria
+  // get the password criteria from the user
   const passwordCriteria = getPasswordCriteria();
 
-  // create random password
+  // create random password using the length set above and the criteria defined above
   const password = createRandomPassword(passwordLength, passwordCriteria);
 
   return password;
