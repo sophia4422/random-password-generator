@@ -1,6 +1,6 @@
 # Random Password Generator
 
-This challenge was to create a random password generator using Javascript. Click here to see the deployed page:
+This challenge was to create a random password generator using Javascript. Click here to see the deployed page: https://sophia4422.github.io/random-password-generator/
 
 ![generate-password](https://user-images.githubusercontent.com/101473841/164995560-4427d35b-4a67-4373-a073-57351f4cce45.png)
 
