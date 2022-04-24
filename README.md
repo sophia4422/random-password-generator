@@ -2,6 +2,8 @@
 
 This challenge was to create a random password generator using Javascript. Click here to see the deployed page:
 
+![generate-password](https://user-images.githubusercontent.com/101473841/164995560-4427d35b-4a67-4373-a073-57351f4cce45.png)
+
 # The Criteria
 
 - When the 'generate password' button is clicked, the user is presented with a series of prompts
@@ -19,8 +21,6 @@ SO THAT I can create a strong password that provides greater security
 
 # The Final Outcome
 
-![generate-password](https://user-images.githubusercontent.com/101473841/164995560-4427d35b-4a67-4373-a073-57351f4cce45.png)
-
 When the generate button is clicked, a prompt appears asking the user to define a desired password length.
 
 Entering a value less than 8 or more than 128 characters leads to a new prompt to appear, alerting the user that the limit is 8 - 128.
@@ -29,6 +29,11 @@ Next, the series of prompts appear which ask the user if they would like lowerca
 If 'Cancel' is selected for every prompt, then a pop-up appears to say 'You must select at least one option'.
 
 When an appropriate length and at least one character type is selected, the generated password shows in the box.
+
+
+![generated-password](https://user-images.githubusercontent.com/101473841/164995593-e036dee2-1836-442a-bddc-4ac3e2cee930.png)
+
+
 
 # Technologies used
 
