@@ -38,7 +38,7 @@ When an appropriate length and at least one character type is selected, the gene
 
 - If I put in a number that is out of the range, e.g. 5000, then a prompt appears reminding the user to pick between 8 and 128 characters. This prompt has a text box, so the user can add a new number within range. However, if I type 5000 again, the application will then continue to show the prompts for special characters - this should not happen. However, if the user selects the character criteria, a password will not generate.
 
-- If I put a inputs a number out of the range just like above, but then adds a number within range to the second prompt box, a password should generate after selecting the character criteria, but it doesn't. I need to replace this prompt box with an alert and add a button to 'Try Again'.
+- If I inputs a number out of the range, just like above, but then add a number within range to the second prompt box, then a password should generate after selecting the character criteria. However, it doesn't. I need to replace this prompt box with an alert and add a button to 'Try Again'.
 
 - If the user types a number figure e.g. 10 - then this 'string' will get converted to a number in the code. However, if they type letters e.g. ten - then the prompt saying 'Password must be at least 8 and under 128 characters lost' appears. This could be confusing to the user, as they will think that 'ten' fits the criteria. The prompt does not specify that the user must type numbers.
 
