@@ -44,4 +44,4 @@ When an appropriate length and at least one character type is selected, the gene
 
 # Conclusion
 
-To conclude, this was a very exciting and challenging task. I am looking forward to improving my code as my skills develop.
+To conclude, this was a very exciting and challenging task. I am looking forward to improving the appearance of this page and the functionality of my code as my skills develop.
