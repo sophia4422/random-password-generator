@@ -15,8 +15,9 @@ const getPasswordLength = () => {
   if (passwordLength >= 8 && passwordLength <= 128) {
     return passwordLength;
   } else {
-    window.alert("Password must be at least 8 and under 128 characters long") &&
-      getPasswordLength();
+    window.alert("Password must be at least 8 and under 128 characters long")
+  } if else {
+    getPasswordLength();
   }
 };
 
