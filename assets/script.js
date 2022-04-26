@@ -25,7 +25,7 @@ const getPasswordLength = () => {
     return passwordLength;
   } else {
     confirm("Password must be at least 8 and under 128 characters long");
-  }
+  } // want to make the page refresh after this with window.location.reload() but the criteria pops up straight away and I think this is preventing the refresh from working
 };
 
 // Prompt the user to select what criteria they want the password to contain,
