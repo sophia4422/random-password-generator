@@ -24,8 +24,7 @@ const getPasswordLength = () => {
   if (passwordLength >= 8 && passwordLength <= 128) {
     return passwordLength;
   } else {
-    confirm("Password must be at least 8 and under 128 characters long") &&
-      window.location.reload();
+    confirm("Password must be at least 8 and under 128 characters long");
   }
 };
 
@@ -77,8 +76,6 @@ const createRandomPassword = (passwordLength, passwordCriteria) => {
   }
   return theArray.join("");
 };
-
-//EDIT ABOVE
 
 // main function to generate the random password
 const generatePassword = () => {
