@@ -1,6 +1,15 @@
 // Assignment Code
 const generateBtn = document.querySelector("#generate");
 
+//character criteria
+const lowercase = "abcdefghijklmnopqrstuvwxyz";
+
+const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+const numbers = "0123456789";
+
+const symbols = "!\"#$%&'()*+,-./:;<=>?@[]^_`{|}~";
+
 // Prompt the user to give a desired password length
 const getPasswordLength = () => {
   //prompt user to enter a length with a pop-up box
@@ -33,16 +42,16 @@ const getPasswordCriteria = () => {
   const passChoice = [];
   //this will alert the user to select what criteria they want in their password
   if (doLowercase) {
-    passChoice.push("abcdefghijklmnopqrstuvwxyz");
+    passChoice.push(lowercase);
   }
   if (doUppercase) {
-    passChoice.push("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+    passChoice.push(uppercase);
   }
   if (doNumbers) {
-    passChoice.push("0123456789");
+    passChoice.push(numbers);
   }
   if (doSpecialChars) {
-    passChoice.push("!#$%&()*+,-./:;<=>?@[]^_`{|}~");
+    passChoice.push(symbols);
   }
   //if the array is empty, the person must be prompted to select at least one option option
   if (passChoice.length === 0) {
