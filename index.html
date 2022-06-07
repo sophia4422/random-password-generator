@@ -12,14 +12,29 @@
     <!-- password generator box -->
 
     <div class="container">
-      <h1>Random Password Generator</h1>
+      <h1 class="title">Random Password Generator</h1>
 
-      <h3>Password Here</h3>
+      <h3 class="password-display">Password Here</h3>
 
-      <form>
+      <form class="form">
         <label for="characterAmountNumber">Number of Characters</label>
-        <input type="range" min="8" max="128" value="10" />
-        <input type="number" min="8" max="128" value="10" />
+        <div class="char-amount">
+          <input
+            type="range"
+            min="8"
+            max="128"
+            value="10"
+            id="characterAmountRange"
+          />
+          <input
+            type="number"
+            min="8"
+            max="128"
+            value="10"
+            id="characterAmountNumber"
+            class="number-input"
+          />
+        </div>
 
         <label for="includeUppercase">Include Uppercase</label>
         <input type="checkbox" id="includeUppercase" />
@@ -33,7 +48,7 @@
         <label for="includeNumbers">Include Numbers</label>
         <input type="checkbox" id="includeNumbers" />
 
-        <button type="submit">Generate a random password!</button>
+        <button type="submit" class="btn">Generate a random password!</button>
       </form>
     </div>
 
