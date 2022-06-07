@@ -9,6 +9,34 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- password generator box -->
+
+    <div class="container">
+      <h1>Random Password Generator</h1>
+
+      <h3>Password Here</h3>
+
+      <form>
+        <label for="characterAmountNumber">Number of Characters</label>
+        <input type="range" min="8" max="128" value="10" />
+        <input type="number" min="8" max="128" value="10" />
+
+        <label for="includeUppercase">Include Uppercase</label>
+        <input type="checkbox" id="includeUppercase" />
+
+        <label for="includeLowercase">Include Lowercase</label>
+        <input type="checkbox" id="includeLowercase" />
+
+        <label for="includeSpecial">Include Special Characters</label>
+        <input type="checkbox" id="includeSpecial" />
+
+        <label for="includeNumbers">Include Numbers</label>
+        <input type="checkbox" id="includeNumbers" />
+
+        <button type="submit">Generate a random password!</button>
+      </form>
+    </div>
+
     <script src="./assets/script.js" async defer></script>
   </body>
 </html>
