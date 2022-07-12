@@ -28,7 +28,6 @@ form.addEventListener("submit", (e) => {
   const password = generatePassword(
     characterAmount,
     includeUppercase,
-    includeLowercase,
     includeNumbers,
     includeSpecial
   );
