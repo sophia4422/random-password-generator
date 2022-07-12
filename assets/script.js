@@ -2,11 +2,11 @@ const characterAmountRange = document.getElementById("characterAmountRange");
 const characterAmountNumber = document.getElementById("characterAmountNumber");
 
 const includeUppercaseElement = document.getElementById("includeUppercase");
-const includeLowerElement = document.getElementById("includeLowercase");
 const includeNumbersElement = document.getElementById("includeNumbers");
 const includeSpecialElement = document.getElementById("includeSpecial");
 
 const form = document.getElementById("password-generator");
+const passwordDisplay = document.getElementById("passwordDisplay");
 
 const uppercaseCharCodes = arrayFromLowToHigh(65, 90);
 const lowercaseCharCodes = arrayFromLowToHigh(97, 122);
@@ -23,7 +23,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const characterAmount = characterAmountNumber.value;
   const includeUppercase = includeUppercaseElement.checked;
-  const includeLowercase = includeLowerElement.checked;
   const includeNumbers = includeNumbersElement.checked;
   const includeSpecial = includeSpecialElement.checked;
   const password = generatePassword(
@@ -33,12 +32,12 @@ form.addEventListener("submit", (e) => {
     includeNumbers,
     includeSpecial
   );
+  passwordDisplay.innerText = password;
 });
 
 function generatePassword(
   characterAmount,
   includeUppercase,
-  includeLowercase,
   includeNumbers,
   includeSpecial
 ) {
@@ -50,7 +49,7 @@ function generatePassword(
   const passwordCharacters = [];
   for (let i = 0; i < characterAmount; i++) {
     const characterCode =
-      charCodes[Math.floor(Math.random() * characterAmount)];
+      charCodes[Math.floor(Math.random() * charCodes.length)];
     passwordCharacters.push(String.fromCharCode(characterCode));
   }
   return passwordCharacters.join("");
