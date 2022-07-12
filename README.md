@@ -1,49 +1,44 @@
-# Random Password Generator
+# Random Password Generator ![MIT badge](https://img.shields.io/badge/MIT-license-green)
 
-This challenge was to create a random password generator using Javascript. Click here to see the deployed page: https://sophia4422.github.io/random-password-generator/
+## Table of Contents
 
-![generate-password](https://user-images.githubusercontent.com/101473841/164995560-4427d35b-4a67-4373-a073-57351f4cce45.png)
+- [Description](#description)
+- [Deployed Page](#deployed-page)
+- [User Story](#user-story)
+- [Criteria](#criteria)
+- [Screenshots](#screenshots)
+- [Questions](#questions)
 
-# The Criteria
+## Description
 
-- When the 'generate password' button is clicked, the user is presented with a series of prompts
-- The length of the password must be at least 8 characters long
-- The password cannot exceed 128 characters long
-- The user must be prompted to select the password criteria, which includes: lowercase, uppercase, numbers and/or special characters
-- At least one character type must be selected
-- The generated password must show on the page
+To improve security on the web, a user can utilise this application to generate a random password for their online accounts. A user can select the desired length of the password (between 8 and 40 characters) and whether to include uppercase letters, numbers and/or special characters.
+
+## Deployed Page
+
+View the application here:
 
 # User Story
 
+```
 AS AN employee with access to sensitive data
 I WANT to randomly generate a password that meets certain criteria
 SO THAT I can create a strong password that provides greater security
+```
 
-# The Final Outcome
+# Criteria
 
-When the generate button is clicked, a prompt appears asking the user to define a desired password length.
+- The length of the password must be at least 8 characters long
+- The password cannot exceed 40 characters long
+- Lowercase characters are implemented by default
+- The user must have the option to select further password criteria, which includes: uppercase, numbers and/or special characters
+- The generated password must show on the page
 
-Entering a value less than 8 or more than 128 characters leads to a new prompt to appear, alerting the user that the limit is 8 - 128.
+## Screenshots
 
-Next, the series of prompts appear which ask the user if they would like lowercase/uppercase/numbers/special characters in their password. 'OK' accepts the characters, 'Cancel' declines them. Any combination of the character selections work.
-If 'Cancel' is selected for every prompt, then a pop-up appears to say 'You must select at least one option'.
+## Questions
 
-When an appropriate length and at least one character type is selected, the generated password shows in the box.
+If you have any questions, please contact me via [email](sophiapwall@yahoo.co.uk)
 
-![generated-password](https://user-images.githubusercontent.com/101473841/164995593-e036dee2-1836-442a-bddc-4ac3e2cee930.png)
+My Github profile is [here](https://github.com/sophia4422)
 
-# Technologies used
-
-- HTML, CSS & Javascript (Functions, If/Else statements, For Loops, Prompts/Alerts)
-
-# Areas of Improvement
-
-- If the user does not select any of the character options, then a prompt appears to tell the user that they must pick one option. Nothing happens after this. The user would have to click 'OK' and the 'Generate' button again. I would like to add a 'Try Again' button directly on the prompt.
-
-- If I put in a number that is out of the range, e.g. 5000, then an alert/confirm appears reminding the user to pick between 8 and 128 characters. The application will then continue to show the prompts for special characters - this should not happen. However, if the user selects the character criteria, a password will not generate.
-
-- If the user types a number figure e.g. 10 - then this 'string' will get converted to a number in the code. However, if they type letters e.g. ten - then the prompt saying 'Password must be at least 8 and under 128 characters lost' appears. This could be confusing to the user, as they will think that 'ten' fits the criteria. The prompt does not specify that the user must type numbers.
-
-# Conclusion
-
-To conclude, this was a very exciting and challenging task. I am looking forward to improving the appearance of this page and the functionality of my code as my skills develop.
+My Linkedin is [here](https://www.linkedin.com/in/sophia-wall/)
