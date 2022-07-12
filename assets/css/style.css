@@ -1,0 +1,76 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f078a8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #292124;
+  padding: 60px;
+  border-radius: 5px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 10px;
+  column-gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+.char-amount {
+  display: flex;
+  align-items: center;
+}
+
+.number-input {
+  width: 40px;
+}
+
+.password-display {
+  background-color: white;
+  color: #292124;
+  padding: 10px;
+  border: 1px solid #292124;
+  height: 2rem;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  border-radius: 5px;
+}
+
+.btn {
+  grid-column: span 2;
+  background-color: #f078a8;
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #d1529a;
+}
